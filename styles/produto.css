@@ -1,0 +1,33 @@
+
+.produto{
+    margin: 50px 100px;
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.produto .imagem{
+    margin: 40px;
+}
+
+.produto .descricao button{
+    background-color: #458dec;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+.produto .descricao button:hover{
+    background-color: #6ca7f3;
+}
+
+.produto .descricao h1{
+    color: #303030;
+}
+
+.produto .descricao h2, h4{
+    color: grey;
+}

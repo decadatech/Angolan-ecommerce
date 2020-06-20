@@ -1,0 +1,23 @@
+.view-carrinho {
+  background-color: white;
+  border-radius: 8px;
+  margin: 50px 100px;
+  padding: 14px;
+}
+
+.view-carrinho .item-carrinho{
+    display: flex;
+}
+
+.view-carrinho .item-carrinho img{
+    width: 10%;
+    margin: 20px;
+}
+
+.view-carrinho .item-carrinho button{
+    background-color: #458dec;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    padding: 10px;
+}

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background-color: #f0f0f5;
+  font-family: "Roboto", sans-serif;
+}
+
+body ::placeholder {
+  color: #06994b;
+  opacity: 1;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style-type: none;
+}
+
+
+footer{
+background-color: #458dec;
+height: 300px;
+margin-top: 28px;
+}
+
+footer .content{
+    margin: 0 100px;
+}
