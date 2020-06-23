@@ -66,17 +66,49 @@
 
             <h1>Meu Carrinho</h1>
 
-            <div class="item-carrinho">
-            
-                <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Nome Produto">
+            <div class="item-carrinho">            
                
-                <div class="info">
+                <!-- <div class="info">
                     <h3>Nome Produto</h3>
                     <h4>Quantidade</h4>
                     <h4>Preço</h4>
                     <button>Remover</button>
-                </div>
+                </div> -->
 
+                <div class='table-responsive'>
+                    <table class='table mb-0' cellspacing="20px">
+                        <thead class='bg-light'>
+                            <tr>
+                                <th scope='col' class='border-0'>Produto</th>
+                                <th scope='col' class='border-0'>Descrição</th>     
+                                <th scope='col' class='border-0'>Preço unitário</th>        
+                                <th scope='col' class='border-0'>Qtd</th>    
+                                <th scope='col' class='border-0'>Total</th>                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Nome Produto" style="height: 100px; width: 100px;"></td>
+                                <td style="width: 50%">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</td>
+                                <td>1 237 104,08 AKZ</td>
+                                <td>1</td>
+                                <td>1 237 104,08 AKZ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class='table mb-0' align="right">
+                        <thead class='bg-light'>
+                            <tr>
+                                <th scope='col' class='border-0'>Total</th>                                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>                           
+                                <td>1 237 104,08 AKZ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
             </div>
 
         </div>

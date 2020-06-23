@@ -1,16 +1,38 @@
 
 .produto{
     margin: 50px 100px;
-    display: flex;
     border-radius: 8px;
     background-color: white;
 }
 
-.produto .imagem{
+.produto .prod-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto .prod-row .imagem{
+    margin: 40px 40px 10px 40px;
+}
+
+.produto .prod-row .descricao{
     margin: 40px;
 }
 
-.produto .descricao button{
+.produto .prod-row .descricao .quantidade{
+    display: flex;
+}
+
+.produto .prod-row .descricao .quantidade input{
+    width: 50px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid gray;
+}
+
+.produto .prod-row .descricao .quantidade button{
+    border-radius: 0 8px 8px 0;
+}
+
+.produto .prod-row .descricao button{
     background-color: #458dec;
     color: white;
     border: 0;
@@ -20,14 +42,38 @@
     transition: 400ms;
 }
 
-.produto .descricao button:hover{
+.produto .prod-row .descricao button.dest{
+    background-color: orange;
+    width: 100%;
+}
+
+.produto .prod-row .descricao button:hover{
     background-color: #6ca7f3;
 }
 
-.produto .descricao h1{
+.produto .prod-row .descricao h1{
     color: #303030;
 }
 
-.produto .descricao h2, h4{
+.produto .prod-row .descricao h2, h4{
     color: grey;
+}
+
+.produto .ficha{
+    margin: 40px;
+}
+
+.produto .ficha .info{
+    background-color: white;
+    box-shadow: 0px 0px 47px -8px rgba(48,48,48,1);
+
+}
+
+.produto .ficha .info ul li{
+    padding: 8px;
+    margin: 0;
+}
+
+.produto .ficha .info ul li.odd{
+    background-color: rgb(233, 233, 233);
 }

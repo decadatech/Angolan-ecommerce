@@ -28,9 +28,9 @@
 .menu .banner{
     height: 400px;
     width: 950px;
-    background-color: indianred;
     overflow: hidden;
-
+    background-image: url("https://images.unsplash.com/photo-1546209705-a7eba4e8da21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80");
+    margin-bottom: 15px;
 }
 
 .menu .banner img{
@@ -55,7 +55,7 @@
   align-items: center;
   background-color: white;
   padding: 0 20px;
-  margin: 60px 0;
+  margin: 10px 0;
   width: 90%;
   border-radius: 8px;
 }
