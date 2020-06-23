@@ -95,7 +95,6 @@
   
   .nav3 {
     background-color: #458dec;
-    padding: 2px;
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -105,13 +104,19 @@
     display: flex;
     justify-content: space-evenly;
   }
+
+  .nav3 ul li{
+    padding: 15px;
+  }
   
   .nav3 ul p {
     color: white;
     font-size: 30px;
+    
   }
 
   .nav3 ul img {
     width: 30px;
     height: 30px;
+    padding: 20px;
   }
