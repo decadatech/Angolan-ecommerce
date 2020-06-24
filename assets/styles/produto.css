@@ -1,79 +1,82 @@
-
-.produto{
-    margin: 50px 100px;
-    border-radius: 8px;
-    background-color: white;
+.produto {
+  margin: 50px 100px;
+  border-radius: 8px;
+  background-color: white;
 }
 
-.produto .prod-row{
-    display: flex;
-    flex-wrap: wrap;
+.produto .prod-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.produto .prod-row .imagem{
-    margin: 40px 40px 10px 40px;
+.produto .prod-row .imagem {
+  margin: 40px 40px 10px 40px;
 }
 
-.produto .prod-row .descricao{
-    margin: 40px;
+.produto .prod-row .descricao {
+  margin: 40px;
 }
 
-.produto .prod-row .descricao .quantidade{
-    display: flex;
+.produto .prod-row .descricao .quantidade {
+  display: flex;
 }
 
-.produto .prod-row .descricao .quantidade input{
-    width: 50px;
-    border-radius: 8px 0 0 8px;
-    border: 1px solid gray;
+.produto .prod-row .descricao .quantidade input {
+  width: 50px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid gray;
 }
 
-.produto .prod-row .descricao .quantidade button{
-    border-radius: 0 8px 8px 0;
+.produto .prod-row .descricao .quantidade button {
+  border-radius: 0 8px 8px 0;
 }
 
-.produto .prod-row .descricao button{
-    background-color: #458dec;
-    color: white;
-    border: 0;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 10px;
-    transition: 400ms;
+.produto .prod-row .descricao button {
+  background-color: #458dec;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 10px;
+  transition: 400ms;
 }
 
-.produto .prod-row .descricao button.dest{
-    background-color: orange;
-    width: 100%;
+.produto .prod-row .descricao button.dest {
+  background-color: orange;
+  width: 100%;
 }
 
-.produto .prod-row .descricao button:hover{
-    background-color: #6ca7f3;
+.produto .prod-row .descricao button:hover {
+  background-color: #6ca7f3;
 }
 
-.produto .prod-row .descricao h1{
-    color: #303030;
+.produto .prod-row .descricao h1 {
+  color: #303030;
 }
 
-.produto .prod-row .descricao h2, h4{
-    color: grey;
+.produto .prod-row .descricao h2,
+h4 {
+  color: grey;
 }
 
-.produto .ficha{
-    margin: 40px;
+.produto .ficha {
+  margin: 40px;
 }
 
-.produto .ficha .info{
-    background-color: white;
-    box-shadow: 0px 0px 47px -8px rgba(48,48,48,1);
-
+.produto .ficha .info {
+  background-color: white;
+  box-shadow: 0px 0px 47px -8px rgba(48, 48, 48, 1);
 }
 
-.produto .ficha .info ul li{
-    padding: 8px;
-    margin: 0;
+.produto .ficha .info ul li {
+  padding: 8px;
+  margin: 0;
 }
 
-.produto .ficha .info ul li.odd{
-    background-color: rgb(233, 233, 233);
+.produto .ficha .info ul li:nth-child(2n) {
+  background-color: rgb(233, 233, 233);
+}
+
+.produto .ficha .info ul li.odd {
+  background-color: rgb(233, 233, 233);
 }
