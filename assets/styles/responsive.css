@@ -1,66 +1,55 @@
-@media screen and  (min-width: 0px) and (max-width: 450px){
+@media screen and (min-width: 0px) and (max-width: 450px) {
   .content .itens {
     display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-  
 }
 
-@media screen and  (min-width: 451px) and (max-width: 640px){
+@media screen and (min-width: 451px) and (max-width: 640px) {
   .content .itens {
     display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
-  
 }
 
-@media screen and  (min-width: 641px) and (max-width: 760px){
+@media screen and (min-width: 641px) and (max-width: 760px) {
   .content .itens {
     display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
   }
-  
 }
 
-
-
-@media screen and  (min-width: 0px) and (max-width: 770px){
-  .nav2{
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  .nav2 {
     flex-direction: column;
   }
-  .nav2 .carrinho{
+  .nav2 .carrinho {
     display: none;
   }
-
 }
 
-
-
-@media screen and  (min-width: 0px) and (max-width: 900px){
-  
+@media screen and (min-width: 0px) and (max-width: 900px) {
   .content {
     margin: 0 40px;
   }
 
-  .produto{
+  .produto {
     margin: 20px;
   }
 
-  .menu{
+  .menu {
     margin: 0;
-}
+  }
 
-  
-  
   .nav2 .carrinho a h3 {
     display: none;
     visibility: hidden;
   }
 
-  header .nav3 ul li{
+  header .nav3 ul li {
     display: none;
   }
 
@@ -68,31 +57,28 @@
     display: none;
   }
 
-  .nav3{
+  .nav3 {
     padding: 0;
   }
 
-  .nav3 ul{
+  .nav3 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-
   .nav3 ul p {
     color: white;
     font-size: 30px;
     display: block !important;
-
   }
 
   .nav3 ul img {
     display: block !important;
   }
-
 }
 
-@media screen and (min-width: 901px) and (max-width: 2000px){
+@media screen and (min-width: 901px) and (max-width: 2000px) {
   .nav3 ul p {
     display: none;
   }
