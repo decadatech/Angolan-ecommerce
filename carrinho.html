@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/styles/header.css">
         <link rel="stylesheet" href="assets/styles/carrinho.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
+        <link rel="stylesheet" href="assets/styles/footer.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     </head>
 
@@ -51,8 +52,17 @@
 
             <div class="nav3">
                 <ul>
-                    <img src="assets/images/menu.png" alt="">
-                    <p>Menu</p>
+
+                    <div class="dropdown">
+                        <img src="assets/images/menu.png" alt="">
+                        <div class="dropdown-content">
+                            <a href="#">Produtos</a>
+                            <a href="#">Novos Produtos</a>
+                            <a href="#">Oportunidades</a>
+                            <a href="#">Destaques</a>
+                        </div>
+                    </div>
+
                     <li>PRODUTOS</li>
                     <li>NOVOS PRODUTOS</li>
                     <li>OPORTUNIDADES</li>
@@ -66,64 +76,97 @@
 
             <h1>Meu Carrinho</h1>
 
-            <div class="item-carrinho">            
-               
-                <!-- <div class="info">
-                    <h3>Nome Produto</h3>
-                    <h4>Quantidade</h4>
-                    <h4>Preço</h4>
-                    <button>Remover</button>
-                </div> -->
+            <div class="legenda">
+                <div id="produto">
+                    <h3>Produto</h3>
+                </div>
 
-                <div class='table-responsive'>
-                    <table class='table mb-0' cellspacing="20px">
-                        <thead class='bg-light'>
-                            <tr>
-                                <th scope='col' class='border-0'>Produto</th>
-                                <th scope='col' class='border-0'>Descrição</th>     
-                                <th scope='col' class='border-0'>Preço unitário</th>        
-                                <th scope='col' class='border-0'>Qtd</th>    
-                                <th scope='col' class='border-0'>Total</th>                    
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Nome Produto" style="height: 100px; width: 100px;"></td>
-                                <td style="width: 50%">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</td>
-                                <td>1 237 104,08 AKZ</td>
-                                <td>1</td>
-                                <td>1 237 104,08 AKZ</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class='table mb-0' align="right">
-                        <thead class='bg-light'>
-                            <tr>
-                                <th scope='col' class='border-0'>Total</th>                                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>                           
-                                <td>1 237 104,08 AKZ</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                 </div>
+                <div id="descricao">
+                    <h3>Descrição</h3>
+                </div>
+
+                <div id="preco">
+                    <h3>Preço</h3>
+                </div>
+
+                <div id="qtd">
+                    <h3>Qtd.</h3>
+                </div>
+
+                <div id="total">
+                    <h3>Total</h3>
+                </div>
+            </div>
+
+            <div class="item-carrinho">
+                <hr>
+                <div id="info">
+                    <div id="produto">
+                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                    </div>
+
+                    <div id="descricao">
+                        <p>lorem ipsum</p>
+                    </div>
+
+                    <div id="preco">
+                        <p>100 AKZ</p>
+                    </div>
+
+                    <div id="qtd">
+                        <input type="number" placeholder="1">
+                        <a href="#">Remover</a>
+                    </div>
+
+                    <div id="total">
+                        <p>100 AKZ</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item-carrinho">
+                <hr>
+                <div id="info">
+                    <div id="produto">
+                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                    </div>
+
+                    <div id="descricao">
+                        <p>lorem ipsum</p>
+                    </div>
+
+                    <div id="preco">
+                        <p>100 AKZ</p>
+                    </div>
+
+                    <div id="qtd">
+                        <input type="number" placeholder="1">
+                        <a href="#">Remover</a>
+                    </div>
+
+                    <div id="total">
+                        <p>100 AKZ</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="total-final">
+                <hr>
+                <h3>Total:</h3>
+                <p>100 AKZ</p>
+                <button>Comprar</button>
             </div>
 
         </div>
 
         <footer>
-
-            <div class="content">
-                <div class="logo">
-                    <h1>LOGOTIPO</h1>
-                </div>
-
-                <div class="info"></div>
-
-                <div class="produtos"></div>
-
+            <div class="container footer-container">
+                <img src="#" alt="LOGOTIPO">
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Decada Technology</p>
             </div>
         </footer>
 

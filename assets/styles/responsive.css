@@ -10,7 +10,7 @@
   .content .itens {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 42px;
   }
 }
 
@@ -27,11 +27,20 @@
     flex-direction: column;
   }
   .nav2 .carrinho {
-    display: none;
+    margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
+
+.nav2{
+  margin: 0 40px;
+}
+
+  .view-carrinho {
+    margin: 40px 10px;
+  }
+  
   .content {
     margin: 0 40px;
   }
@@ -44,9 +53,13 @@
     margin: 0;
   }
 
-  .nav2 .carrinho a h3 {
+  .nav2 .carrinho a h3.texto {
     display: none;
     visibility: hidden;
+  }
+
+  .nav2 .carrinho a h3.quantidade {
+    border-radius: 8px 0 0 8px;
   }
 
   header .nav3 ul li {
