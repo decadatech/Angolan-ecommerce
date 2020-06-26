@@ -16,14 +16,3 @@ body a {
 body li {
   list-style-type: none;
 }
-
-
-footer{
-background-color: #458dec;
-height: 300px;
-margin-top: 28px;
-}
-
-footer .content{
-    margin: 0 100px;
-}
