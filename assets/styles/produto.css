@@ -9,6 +9,8 @@
 .produto .prod-row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .produto .prod-row .imagem{
@@ -56,7 +58,7 @@
     color: #303030;
 }
 
-.produto .prod-row .descricao h2, h4{
+.produto .prod-row .descricao h2, h4, h5{
     color: grey;
 }
 
