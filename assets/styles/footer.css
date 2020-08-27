@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  background-color: #458dec;
+  margin-top: 40px;
+}
+
+footer div.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer div.footer-container img {
+  width: 200px;
+  height: 200px;
+  margin: 24px;
+}
+
+footer div.copyright {
+  padding: 8px 16px;
+  background-color: #1b5baf;
+}
+
+footer div.copyright p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
