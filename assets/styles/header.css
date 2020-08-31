@@ -5,6 +5,7 @@
   width: 100%;
 }
 
+
 header .nav1 ul {
   display: flex;
   justify-content: start;
@@ -123,3 +124,25 @@ header .nav1 p {
   height: 30px;
   padding: 20px;
 }
+
+
+.dropdown .dropdown-content{
+  display: none;
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a{
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.nav3 ul .dropdown:hover .dropdown-content{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5em;
+}
+
+
+
+

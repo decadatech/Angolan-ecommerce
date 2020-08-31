@@ -1,4 +1,7 @@
 @media screen and (min-width: 0px) and (max-width: 450px) {
+ 
+ /* Grid index.html e categoria.html */
+ 
   .content .itens {
     display: grid;
     grid-template-columns: 1fr;
@@ -7,14 +10,20 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 640px) {
+
+/* Grid index.html e categoria.html */
+
   .content .itens {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 42px;
   }
 }
 
 @media screen and (min-width: 641px) and (max-width: 760px) {
+ 
+ /* Grid index.html e categoria.html */
+
   .content .itens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -23,30 +32,41 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 770px) {
+ 
+ /* Header */
+ 
   .nav2 {
     flex-direction: column;
   }
   .nav2 .carrinho {
-    display: none;
+    margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
-  .content {
-    margin: 0 40px;
+
+/* Header */
+
+.nav2{
+  margin: 0 40px;
+}
+
+  .view-carrinho {
+    margin: 40px 10px;
   }
 
-  .produto {
-    margin: 20px;
-  }
 
   .menu {
     margin: 0;
   }
 
-  .nav2 .carrinho a h3 {
+  .nav2 .carrinho a h3.texto {
     display: none;
     visibility: hidden;
+  }
+
+  .nav2 .carrinho a h3.quantidade {
+    border-radius: 8px 0 0 8px;
   }
 
   header .nav3 ul li {
@@ -76,9 +96,21 @@
   .nav3 ul img {
     display: block !important;
   }
+
+  .content {
+    margin: 0 40px;
+  }
+
+  .produto {
+    margin: 20px;
+  }
+
 }
 
 @media screen and (min-width: 901px) and (max-width: 2000px) {
+
+/* Header */
+
   .nav3 ul p {
     display: none;
   }

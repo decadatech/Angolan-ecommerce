@@ -1,107 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banana e Afins</title>
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/produto.css" />
-    <link rel="stylesheet" href="assets/styles/header.css" />
-    <link rel="stylesheet" href="assets/styles/responsive.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banana e Afins</title>
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/produto.css">
+        <link rel="stylesheet" href="assets/styles/header.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+        <link rel="stylesheet" href="assets/styles/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    </head>
 
-  <body>
-    <header>
-      <nav class="nav1">
-        <ul>
-          <li>
-            <a href="#">LOJA ONLINE</a>
-          </li>
-          <li>
-            <a href="#">SOBRE NÓS</a>
-          </li>
-        </ul>
-      </nav>
+    <body>
 
-      <div class="nav2">
-        <div class="logo">
-          <h1>LOGOTIPO</h1>
+        <header>
+
+            <nav class="nav1">
+                <ul>
+                    <li>
+                        <a href="#">LOJA ONLINE</a>
+                    </li>
+                    <li>
+                        <a href="#">SOBRE NÓS</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav2">
+
+                <div class="logo">
+                    <h1>LOGOTIPO</h1>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder=" O que procuras?">
+                    <a href="#">
+                        <img src="assets/images/search.png" alt="">
+                    </a>
+                </form>
+
+                <div class="carrinho">
+                    <a href="carrinho.html">
+                        <h3 class="texto">CARRINHO</h3>
+                        <h3 class="quantidade">0</h3>
+                        <img src="assets/images/supermarket.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="nav3">
+                <ul>
+
+                    <div class="dropdown">
+                        <img src="assets/images/menu.png" alt="">
+                        <div class="dropdown-content">
+                            <a href="#">Produtos</a>
+                            <a href="#">Novos Produtos</a>
+                            <a href="#">Oportunidades</a>
+                            <a href="#">Destaques</a>
+                        </div>
+                    </div>
+
+                    <li>PRODUTOS</li>
+                    <li>NOVOS PRODUTOS</li>
+                    <li>OPORTUNIDADES</li>
+                    <li>DESTAQUES</li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="produto">
+            <div class="prod-row">
+                <div class="imagem">
+                    <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                </div>
+                <div class="descricao">
+                    <button class="dest">Destaque</button>
+                    <h5>> Frutas Cítricas > Frutas Tropicais > Abacaxis</h5>
+                    <h1>Abacaxi</h1>
+                    <h4>Frutas maduras saborosas e saudáveis</h4>
+                    <h2>R$50,00</h2>
+                    <div class="quantidade">
+                        <input type="number" placeholder="1">
+                        <button>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ficha">
+                <h3>FICHA INFORMATIVA</h3>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <strong>Info:</strong>
+                            info info</li>
+                        <li class="odd">
+                            <strong>Info:</strong>
+                            info info</li>
+                        <li>
+                            <strong>Info:</strong>
+                            info info</li>
+                        <li class="odd">
+                            <strong>Info:</strong>
+                            info info</li>
+                        <li>
+                            <strong>Info:</strong>
+                            info</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <form action="">
-          <input type="text" placeholder=" O que procuras?" />
-          <a href="#">
-            <img src="assets/images/search.png" alt="" />
-          </a>
-        </form>
-
-        <div class="carrinho">
-          <a href="#">
-            <h3 class="texto">CARRINHO</h3>
-            <h3 class="quantidade">0</h3>
-            <img src="assets/images/supermarket.png" alt="" />
-          </a>
-        </div>
-      </div>
-
-      <div class="nav3">
-        <ul>
-          <img src="assets/images/menu.png" alt="" />
-          <li>PRODUTOS</li>
-          <li>NOVOS PRODUTOS</li>
-          <li>OPORTUNIDADES</li>
-          <li>DESTAQUES</li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="produto">
-      <div class="prod-row">
-        <div class="imagem">
-          <img
-            src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-            alt=""
-          />
-        </div>
-        <div class="descricao">
-          <button class="dest">Destaque</button>
-          <h5>Frutas Cítricas</h5>
-          <h1>Abacaxi</h1>
-          <h4>Frutas maduras saborosas e saudáveis</h4>
-          <h2>R$50,00</h2>
-          <div class="quantidade">
-            <input type="number" />
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha">
-        <h3>FICHA INFORMATIVA</h3>
-        <div class="info">
-          <ul>
-            <li><strong>Info:</strong> info info</li>
-            <li><strong>Info:</strong> info info</li>
-            <li><strong>Info:</strong> info info</li>
-            <li><strong>Info:</strong> info info</li>
-            <li><strong>Info:</strong> info</li>
-            <li><strong>Info:</strong> info</li>
-            <li><strong>Info:</strong> info</li>
-            <li><strong>Info:</strong> info</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="content">
-        <div class="logo">
-          <h1>LOGOTIPO</h1>
-        </div>
+        <footer>
+            <div class="container footer-container">
+                <img src="#" alt="LOGOTIPO">
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Decada Technology</p>
+            </div>
+        </footer>
 
         <div class="info"></div>
 

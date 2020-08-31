@@ -1,189 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/home.css">
-    <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/responsive.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
 
-    <title>Banana e Afins</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav1">
-        <ul>
-          <li>
-            <a href="#">LOJA ONLINE</a>
-          </li>
-          <li>
-            <a href="#">SOBRE NÓS</a>
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="nav2">
-        <div class="logo">
-          <h1>LOGOTIPO</h1>
-        </div>
+  <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
 
-        <form action="">
-          <input type="text" placeholder="O que procuras?">
-          <a href="#">
-              <img src="assets/images/search.png" alt="search">
-          </a>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/styles/global.css">
+  <link rel="stylesheet" href="assets/styles/navbar.css">
+
+  <link rel="stylesheet" href="assets/styles/home.css">
+  <link rel="stylesheet" href="assets/styles/header.css">
+  <link rel="stylesheet" href="assets/styles/responsive.css">
+  <link rel="stylesheet" href="assets/styles/footer.css">
+
+  <title>NUH KAMPO</title>
+</head>
+
+<body>
+  <nav>
+    <div class="top">
+      <div class="wrapper">
+        <a href="#">LOJA ONLINE</a>
+        <a href="#">SOBRE NÓS</a>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="wrapper">
+        <img src="./assets/images/colored-logo.png" alt="NUH KAMPO">
+
+        <form class="input-view">
+          <input type="text" name="search" id="search" placeholder="O que procuras?">
+
+          <button type="button">
+            <img src="assets/images/search.png" alt="search">
+          </button>
         </form>
 
-        <div class="carrinho">
-          <a href="#">
-            <h3 class="texto">CARRINHO</h3>
-            <h3 class="quantidade">0</h3>
-            <img src="assets/images/supermarket.png" alt="cart">
+        <div class="cart-view">
+          <a href="cart.html">
+            <span>CARRINHO</span>
+            <span class="quantity">0</span>
+            <img src="assets/images/supermarket.png" alt="">
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="nav3">
-          <ul>
-              <img src="../assets/menu.png" alt="">
-              <li>PRODUTOS</li>
-              <li>NOVOS PRODUTOS</li>
-              <li>OPORTUNIDADES</li>
-              <li>DESTAQUES</li>
-          </ul>
+    <div class="bottom">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#">PRODUTOS</a></li>
+
+          <li><a href="#">NOVOS PRODUTOS</a></li>
+
+          <li><a href="#">OPORTUNIDADES</a></li>
+
+          <li><a href="#">DESTAQUES</a></li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
 
-        <div class="menu">
-            <div class="produtos">
-                <ul>
-                    <a href="#">
-                        <li>
-                            Categoria 1</li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            Categoria 1</li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            Categoria 1</li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            Categoria 1</li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            Categoria 1</li>
-                    </a>
-                </ul>
-            </div>
 
-            <div class="banner">
-                <img>
-            </div>
-        </div>
+  <br/>
 
-        <div class="content">
+  <div class="menu">
+    <div class="produtos">
+      <ul>
+        <a href="#">
+          <li>
+            Categoria 1</li>
+        </a>
+        <a href="#">
+          <li>
+            Categoria 1</li>
+        </a>
+        <a href="#">
+          <li>
+            Categoria 1</li>
+        </a>
+        <a href="#">
+          <li>
+            Categoria 1</li>
+        </a>
+        <a href="#">
+          <li>
+            Categoria 1</li>
+        </a>
+      </ul>
+    </div>
 
-            <div class="itens">
+    <div class="banner">
+      <img>
+    </div>
+  </div>
 
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto </h4>
-                    <button class="more">Ver mais</button>
-                </div>
+  <div class="content">
 
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
+    <div class="itens">
 
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="produto.html">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-                <div class="item">
-                    <h3>Abacaxi<h3>
-                    <a href="#">
-                        <img src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Abacaxi">
-                    </a>
-                    <h4>Descrição do Produto</h4>
-                    <button class="more">Ver mais</button>
-                </div>
-
-            </div>
-        </div>
-
-    <footer>
-      <div class="container footer-container">
-        <img src="#" alt="LOGOTIPO">
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
       </div>
-      <div class="copyright">
-        <p>Copyright © 2020 Decada Technology</p>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
       </div>
-    </footer>
-    
-        <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- Bootstrap JS CDN -->
-    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-    
-    <script src="assets/js/index.style.js"></script>
-  </body>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+
+      <div class="item">
+        <h3>Abacaxi<h3>
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1589606743932-747c74e7330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                alt="Abacaxi">
+            </a>
+            <h3>Descrição do Produto</h3>
+            <h4>100 AKZ</h4>
+            <button class="more">Ver mais</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-container">
+      <img src="#" alt="LOGOTIPO">
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2020 Decada Technology</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="assets/js/index.style.js"></script>
+</body>
+
 </html>
