@@ -10,38 +10,17 @@ footer div.footer-container {
   justify-content: center;
   align-items: center;
 }
+
 footer div.footer-container img {
   width: 360px;  
   margin: 24px;
 }
 
-footer div.footer-items {
-  height: 48px;
-  background-color: rgb(6, 153, 75);
-}
-
-footer div.footer-items .wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-footer div.footer-items .wrapper ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;  
-}
-
-footer div.footer-items .wrapper ul li a {    
-  color: #fff;
-  text-decoration: none;
-  margin: auto 16px;
-}
-
-footer div.footer-items .wrapper ul li a:hover {
-  color: #ddd;
+@media(max-width: 500px) {
+  footer div.footer-container img {
+    width: 320px;  
+    margin: 8px;
+  }
 }
 
 footer div.copyright {
