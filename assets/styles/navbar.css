@@ -3,33 +3,84 @@ nav {
 }
 
 nav .top {
-  background: #06994b;
-  padding: 12px 16px;
+  background: #4DA555;
+  padding: 8px 16px;
 }
 
 nav .top a {
+  text-decoration: none;
   color: #fff;
   font-weight: 500;
+  font-weight: 700;
 }
 
-nav .top a + a {
+nav .top a {
   margin-left: 12px;
 }
 
 nav .middle .wrapper {
   display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;  
+}
+
+nav .middle .wrapper > img {
+  /* width: 280px; */
+  height: 172px;
+  -webkit-box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
+  -moz-box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
+  box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
+}
+
+nav .middle .wrapper .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+nav .middle .wrapper .main-content .main-top {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 8px auto;
+  background: #45954C;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
 }
 
-nav .middle .wrapper img {
-  width: 250px;
-  margin: 8px 16px; 
+nav .middle .wrapper .main-content .main-top strong {
+  margin-left: 8px;
 }
 
-nav .middle .wrapper .input-view {
+nav .middle .wrapper .main-content .main-top img {
+  width: 24px;
+}
+
+nav .middle .wrapper .main-content .nav-content {  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+nav .middle .wrapper .main-content .nav-content .description {  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav .middle .wrapper .main-content .nav-content .main-form {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+
+nav .middle .wrapper .main-content .nav-content .main-form .input-view {
   display: flex;
   align-items: center;
   height: 48px;
@@ -39,7 +90,7 @@ nav .middle .wrapper .input-view {
   overflow: hidden;  
 }
 
-nav .middle .wrapper .input-view input { 
+nav .middle .wrapper .main-content .nav-content .main-form .input-view input { 
   width: 300px;
   height: 100%;
   background-color: #f0f0f5;
@@ -49,7 +100,7 @@ nav .middle .wrapper .input-view input {
   border: 0;  
 }
 
-nav .middle .wrapper .input-view button {
+nav .middle .wrapper .main-content .nav-content .main-form .input-view button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,12 +112,12 @@ nav .middle .wrapper .input-view button {
   outline: 0;
 }
 
-nav .middle .wrapper .input-view button img {
+nav .middle .wrapper .main-content .nav-content .main-form .input-view button img {
   height: 24px;
   width: 24px;
 }
 
-nav .middle .wrapper .cart-view a {
+nav .middle .wrapper .main-content .nav-content .main-form .cart-view a {
   width: 200px;
   display: flex;
   justify-content: flex-start;
@@ -80,7 +131,7 @@ nav .middle .wrapper .cart-view a {
   overflow: hidden;
 }
 
-nav .middle .wrapper .cart-view a span {  
+nav .middle .wrapper .main-content .nav-content .main-form .cart-view a span {  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,43 +142,14 @@ nav .middle .wrapper .cart-view a span {
   background-color: rgb(6, 153, 75);
 }
 
-nav .middle .wrapper .cart-view a span.quantity {      
+nav .middle .wrapper .main-content .nav-content .main-form .cart-view a span.quantity {      
   width: 48px;
   height: 100%;
   font-weight: bold;
   background-color: rgb(5, 133, 64);
 }
 
-nav .middle .wrapper .cart-view a img {  
-  width: 24px;  
-}
-
-nav .bottom {
-  background-color: #458dec;
-}
-
-nav .bottom .wrapper {}
-
-nav .bottom .wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-nav .bottom .wrapper ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;  
-}
-
-nav .bottom .wrapper ul li a {    
-  color: #fff;
-  text-decoration: none;
-  margin: auto 16px;
-}
-
-nav .bottom .wrapper ul li a:hover {
-  color: #ddd;
+nav .middle .wrapper .main-content .nav-content .main-form .cart-view a img {  
+  width: 24px;
+  margin-left: 16px;
 }
