@@ -1,6 +1,97 @@
+main {
+  margin: 32px auto;
+}
 
-header.wrapper { 
-  margin-top: 64px; 
+main .wrapper .header {
+  border-bottom: 1px solid #363636;
+}
+
+main .wrapper .header h3 {
+  text-align: center;
+}
+
+main .wrapper .products {
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+
+@media(max-width: 900px) {
+  main .wrapper .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  main .wrapper .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+main .wrapper .products .item  {
+  display: flex;
+  flex-direction: column;
+}
+
+main .wrapper .products .item .image-container {
+  border-top: 2px solid rgb(5, 133, 64);
+  padding: 16px;
+
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.25);
+}
+
+main .wrapper .products .item span {
+  margin-top: 16px;
+  font-size: 18px;
+  text-align: center;
+}
+
+main .wrapper .products .item strong {
+  color: rgb(5, 133, 64);
+  text-align: center;
+}
+
+main .wrapper .products .item .actions {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+main .wrapper .products .item .actions button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  margin: 6px;
+  padding: 6px;
+  transition: 0.2s;
+}
+
+main .wrapper .products .item .actions button:hover {
+  transform: translateY(-8px);
+}
+
+.products .item img {
+  width: 100%;
+}
+
+main .wrapper .products .item .actions button svg {
+  color: #363636;
+  transition: 0.2s;
+}
+
+main .wrapper .products .item .actions button:hover svg {
+  color: #000;
+}
+
+/* 
+header.wrapper {   
   display: flex;  
 }
 
@@ -13,7 +104,7 @@ header.wrapper {
 header.wrapper ul.categories  {  
   background-color: #6ca7f3;
   height: 400px;
-  width: 350px;  
+  width: 280px;  
 }
 
 header.wrapper ul.categories li {  
@@ -168,4 +259,4 @@ main.wrapper {
   border-radius: 4px;
   color: #FFF;
   text-decoration: none;
-}
+} */
