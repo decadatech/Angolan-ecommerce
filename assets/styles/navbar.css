@@ -25,8 +25,8 @@ nav .middle .wrapper {
 }
 
 nav .middle .wrapper > img {
-  /* width: 280px; */
-  height: 172px;
+  width: 280px;
+  /* height: 172px; */
   -webkit-box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
   -moz-box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
   box-shadow: -5px 0px 53px -20px rgba(0,0,0,0.52);
@@ -154,11 +154,36 @@ nav .middle .wrapper .main-content .nav-content .main-form .cart-view a img {
   margin-left: 16px;
 }
 
-nav .menu {
-  margin: 0;
-  width: 100%;
-  background: #363636;
+nav .menu.wrapper {
+  background-color: #363636;
+  display: grid;  
+  grid-template-columns: repeat(4, 280px);
+}
+
+nav .menu.wrapper button {
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;    
+  transition: 0.2s;
+}
+
+nav .menu.wrapper button.active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav .menu.wrapper button + button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav .menu.wrapper button svg {
+  margin-right: 12px;
 }
 
 @media(max-width: 600px) {
@@ -185,5 +210,15 @@ nav .menu {
 
   nav .middle .wrapper .main-content .nav-content .main-form {
     flex-direction: column;
+  }
+
+  nav .menu.wrapper {
+    background-color: #363636;
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav .menu.wrapper button span {
+    display: none;
   }
 }
