@@ -33,19 +33,22 @@
       <div class="list-group list-group-flush">
         <a href="index.php" class="list-group-item list-group-item-action">
           HOME
-        </a>     
-        <a href="product.php" class="list-group-item list-group-item-action">
-          PRODUTO
-        </a>   
-        <a href="brand.php" class="list-group-item list-group-item-action">
-          MARCAS
-        </a>   
+        </a>
         <a style="background-color: #242424; color: white" href="about.php" class="list-group-item list-group-item-action">
           SOBRE
+        </a>
+        <a href="categories.php" class="list-group-item list-group-item-action">
+          CATEGORIAS
+        </a>
+        <a href="brands.php" class="list-group-item list-group-item-action">
+          MARCAS
+        </a>
+        <a href="products.php" class="list-group-item list-group-item-action">
+          PRODUTO
         </a>  
-        <a href="contact.php" class="list-group-item list-group-item-action">
-          CONTATO
-        </a>     
+        <a href="providers.php" class="list-group-item list-group-item-action">
+          FORNECEDORES
+        </a> 
         <a href="user.php" class="list-group-item list-group-item-action">
           USUÁRIO
         </a>
