@@ -48,6 +48,9 @@
         <a href="products.php" class="list-group-item list-group-item-action">
           PRODUTO
         </a>  
+        <a href="providers.php" class="list-group-item list-group-item-action">
+          FORNECEDORES
+        </a> 
         <a href="user.php" class="list-group-item list-group-item-action">
           USUÁRIO
         </a>
