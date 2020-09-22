@@ -81,8 +81,8 @@
                   <input type="text" name="colheita" id="colheita" class="form-control" required>
                 </div>   
                 <div class="col-md-6">
-                  <label for="colheita">Data de Colheita</label>
-                  <input type="text" name="colheita" id="colheita" class="form-control" required>
+                  <label for="data">Data de Colheita</label>
+                  <input type="text" name="data" id="data" class="form-control" required>
                 </div>         
               </div>              
             </div>              
@@ -101,6 +101,7 @@
                 Clique no botão '+' para adicionar os produtos
                 <div id="dep" style="margin-top:25px"></div>
             </div>   
+                <input type="hidden" name="numLinha" id="numLinha" value="0" class="form-control">
                 <button type="submit" class="btn btn-primary">Adicionar</button>
           </form>
         </div>
@@ -115,70 +116,70 @@
 
   </div>
 
-    <div id="addProviderProductModal" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Adição feita!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-              <p>Seu produto foi inserido com sucesso.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <div id="addHarvestProductModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Adição feita!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           </div>
-        </div>
-      </div>
-    </div>    
-
-    <div class="modal fade" id="editProviderProductModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel">Editar Produto</h5>
-                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form method="POST" id="FormModalWork">
-                    <div class="form-row">                                
-                        <div class="form-group col-md-12">
-                            <label for="edit-fruta">Nome Fruta</label>
-                            <input type="text" class="form-control" name="edit-fruta" id="edit-fruta" required>
-                        </div>
-                    </div>   
-                    <div class="form-row">                                
-                        <div class="form-group col-md-6">
-                            <label for="edit-estoque">Estoque</label>
-                            <input type="number" class="form-control" name="edit-estoque" id="edit-estoque" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="edit-unidade">Unidade</label>
-                            <select name="edit-unidade" id="edit-unidade" class="form-control">
-                              <option value="0">KG</option>
-                              <option value="1">UN</option>
-                            </select>                          
-                        </div>
-                    </div>       
-                    <div class="form-row">                                
-                        <div class="form-group col-md-12">
-                            <label for="edit-valor">Valor por <span id="edit-valorUnidade">KG</span></label>
-                            <input type="text" class="form-control" name="edit-valor" id="edit-valor" required>
-                        </div>
-                    </div>                                                          
-                </form>
-            </div>
-            <div class="modal-footer">                         
-                <button type="submit" class="btn btn-success save">Editar</button>            
-                <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Fechar</button>
-            </div>
+          <div class="modal-body">
+            <p>Sua colheita foi inserido com sucesso.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>    
+
+  <div class="modal fade" id="editProviderProductModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Editar Produto</h5>
+              <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form method="POST" id="FormModalWork">
+                  <div class="form-row">                                
+                      <div class="form-group col-md-12">
+                          <label for="edit-fruta">Nome Fruta</label>
+                          <input type="text" class="form-control" name="edit-fruta" id="edit-fruta" required>
+                      </div>
+                  </div>   
+                  <div class="form-row">                                
+                      <div class="form-group col-md-6">
+                          <label for="edit-estoque">Estoque</label>
+                          <input type="number" class="form-control" name="edit-estoque" id="edit-estoque" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="edit-unidade">Unidade</label>
+                          <select name="edit-unidade" id="edit-unidade" class="form-control">
+                            <option value="0">KG</option>
+                            <option value="1">UN</option>
+                          </select>                          
+                      </div>
+                  </div>       
+                  <div class="form-row">                                
+                      <div class="form-group col-md-12">
+                          <label for="edit-valor">Valor por <span id="edit-valorUnidade">KG</span></label>
+                          <input type="text" class="form-control" name="edit-valor" id="edit-valor" required>
+                      </div>
+                  </div>                                                          
+              </form>
+          </div>
+          <div class="modal-footer">                         
+              <button type="submit" class="btn btn-success save">Editar</button>            
+              <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+    </div>
+  </div>
 
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

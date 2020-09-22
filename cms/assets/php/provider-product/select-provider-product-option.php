@@ -11,7 +11,7 @@
         echo "<div class='form-group'>
                 <div class='row'>
                     <div class='col-md-6'>
-                        <select class='form-control' name='provider-product' id='provider-product'>";
+                        <select class='form-control' name='provider-product[]' id='provider-product[]'>";
 
         while ($linha = $result->fetch_assoc()){    
             echo "          <option class='form-control' value='".$linha['tb10_id']."'>".$linha['tb10_fruta']."</option>";

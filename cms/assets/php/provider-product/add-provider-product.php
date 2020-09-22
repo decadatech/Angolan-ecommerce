@@ -10,6 +10,4 @@
 
     $queryinsere = "INSERT INTO `tb10_providers_products`(`tb10_fruta`, `tb10_estoque`, `tb10_unidade`, `tb10_valor`, `tb10_id_fornecedor`) VALUES ('".$fruta."', '".$estoque."', '".$unidade."', '".$valor."', '".$fornecedor."')";
     $resultadoinsere = mysqli_query($conexao, $queryinsere);
-    echo $queryinsere;
-	
 ?>
