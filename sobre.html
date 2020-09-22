@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Banana e Afins</title>
-        <link rel="stylesheet" href="assets/styles/main.css">
-        <link rel="stylesheet" href="assets/styles/about.css">
-        <link rel="stylesheet" href="assets/styles/produto.css">
-        <link rel="stylesheet" href="assets/styles/header.css">
-        <link rel="stylesheet" href="assets/styles/responsive.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banana e Afins</title>
+	<link rel="stylesheet" href="assets/styles/about.css">
+	<link rel="stylesheet" href="assets/styles/global.css">
+  <link rel="stylesheet" href="assets/styles/navbar.css">
+  <link rel="stylesheet" href="assets/styles/footer.css">
+  <link rel="stylesheet" href="assets/styles/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <nav class="nav1">
-                <ul>
-                    <li>
-                        <a href="#">LOJA ONLINE</a>
-                    </li>
-                    <li>
-                        <a href="#">SOBRE NÓS</a>
-                    </li>
-                </ul>
-            </nav>
+  <nav>
+    <div class="top">
+      <div class="wrapper">
+        <a href="/">LOJA ONLINE</a>
+        <a href="about.html">SOBRE NÓS</a>
+      </div>
+    </div>
 
-            <div class="nav2">
-                <div class="logo">
-                    <h1>LOGOTIPO</h1>
-                </div>
+    <div class="middle">
+      <div class="wrapper">        
+        <img src="./assets/images/colored-logo.png" alt="NUH KAMPO">        
+        <div class="main-content">
+          <div class="main-top">
+            <div>
+              <span>Atendimento (Seg. a Sex das 8h às 16:30)</span>
+              <strong>111 111 111 / 111 111 111</strong>        
             </div>
-        </header>
 
-        <section class="content">
-            <!-- <div class="container ajax-reponse-select-about"> -->
-            <div class="container">
-                <h3><i data-feather="crosshair"></i> Missão</h3>
-                <h5>Nossa Missão é prestar o melhor serviço na indicação e fornecimento de produtos que assegurem aos nossos clientes conforto visual, eficiência e segurança.</h5>
-        
-                <!-- <h3><i data-feather="flag"></i> Valores</h3>
-                <h5>Nossos Valores são conduta ética, excelência, inovação, parceria, responsabilidade social e ambiental e qualidade de vida de nossos colaboradores.</h5> -->
-        
-                <h3><i data-feather="zap"></i> Compromissos</h3>
-                <h5>Nossos Compromissos incluem simpatia, atenção e dedicação ao cliente, inciativa e determinação na busca pela melhor solução para o cliente, manutenção da loja limpa e organizada, variedade de produtos, preços competitivos, rapidez na entrega, tratamento diferenciado dos padrões normais das lojas convencionais, qualidade de vida dos nossos colaboradores.</h5>
-        
-                <h3><i data-feather="users"></i> Atendimento</h3>
-                <h5>Nosso Atendimento é personalizado porque temos o compromisso de orientar os clientes na compra do material adequado quanto a características, benefícios e segurança na aplicação.</h5>
+            <div>
+              <img src="assets/images/whatsapp.webp" alt="Whatsapp">
+              <strong>111 111 111</strong>          
             </div>
-        
-        </section>
 
-        <footer>
-            <div class="content">
-                <div class="logo">
-                    <h1>LOGOTIPO</h1>
-                </div>
-                <div class="info"></div>
-                <div class="produtos"></div>
+            <div>
+              <strong>contato@nuhkampo.com</strong>
             </div>
-        </footer>
+          </div>          
+        </div>
+    	</div>   
+		</div>   
+	</nav>  
 
-        <!-- FEATHER ICONS -->
-        <script src="https://unpkg.com/feather-icons"></script>
+	<section class="content">
+		<!-- <div class="container ajax-reponse-select-about"> -->
+		<div class="container">
+			<h3><i data-feather="crosshair"></i> Missão</h3>
+			<h5>Nossa Missão é prestar o melhor serviço na indicação e fornecimento de produtos que assegurem aos nossos clientes conforto visual, eficiência e segurança.</h5>
 
-        <script>
-            feather.replace();
-        </script>
-    </body>    
+			<!-- <h3><i data-feather="flag"></i> Valores</h3>
+			<h5>Nossos Valores são conduta ética, excelência, inovação, parceria, responsabilidade social e ambiental e qualidade de vida de nossos colaboradores.</h5> -->
+
+			<h3><i data-feather="zap"></i> Compromissos</h3>
+			<h5>Nossos Compromissos incluem simpatia, atenção e dedicação ao cliente, inciativa e determinação na busca pela melhor solução para o cliente, manutenção da loja limpa e organizada, variedade de produtos, preços competitivos, rapidez na entrega, tratamento diferenciado dos padrões normais das lojas convencionais, qualidade de vida dos nossos colaboradores.</h5>
+
+			<h3><i data-feather="users"></i> Atendimento</h3>
+			<h5>Nosso Atendimento é personalizado porque temos o compromisso de orientar os clientes na compra do material adequado quanto a características, benefícios e segurança na aplicação.</h5>
+		</div>
+	
+	</section>
+
+	<footer>
+    <div class="footer-container">
+      <div class="wrapper">
+        <img src="assets/images/colored-logo.png" alt="NUH KAMPO">
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <div class="wrapper">
+        <p>Copyright © 2020 <a href="https://decadatech.com" target="_blank">Decada Technology</a></p>
+      </div>
+    </div>
+  </footer>
+
+	<!-- FEATHER ICONS -->
+	<script src="https://unpkg.com/feather-icons"></script>
+
+	<script>
+			feather.replace();
+	</script>
+</body>    
 </html>
 		
