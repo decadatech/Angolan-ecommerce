@@ -1,5 +1,5 @@
 function navigateToProductPage() {
-    window.location.href = "produto.html";
+    window.location.href = "product.html";
 }
 
 function navigateToMenuItem(menuItem) {
